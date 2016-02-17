@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8100/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <script>
+      // Injected Ionic Go To URL Live Reload Plugin
+      window.LiveReloadPlugin_IonicGoToUrl = (function() {
+        var GOTO_KEY = "__ionic_goto_url__";
+        var HISTORY_GO_KEY = "__ionic_history_go__";
+        var GoToUrlPlugin = function(window, host) {
+          this.window = window;
+          this.host = host;
+        }
+        GoToUrlPlugin.identifier = "__ionic_goto_url__";
+        GoToUrlPlugin.version = "1.0";
+        GoToUrlPlugin.prototype.reload = function(path) {
+          try {
+            if(path) {
+              if(path.indexOf(GOTO_KEY) === 0) {
+                this.window.document.location = path.replace(GOTO_KEY, "");
+                return true;
+              }
+              if(path.indexOf(HISTORY_GO_KEY) === 0) {
+                this.window.document.history.go( parseInt(path.replace(HISTORY_GO_KEY, ""), 10));
+                return true;
+              }
+            }
+          } catch(e) {
+            console.log(e);
+          }
+          return false;
+        };
+        return GoToUrlPlugin;
+      })();
+    </script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="./localhost_files/ionic.css" rel="stylesheet">
+    <link href="./localhost_files/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="./localhost_files/ionic.bundle.js"></script>
+    <!-- <script src="lib/ionic/js/angular.js"></script> -->
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="./localhost_files/cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="./localhost_files/app.js"></script>
+  <script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script></head>
+  <body ng-app="myApp" class="grade-a platform-browser platform-ios platform-ios9 platform-ios9_1 platform-ready">
+
+    <ion-pane class="pane">
+      <ion-header-bar class="bar-calm bar bar-header">
+        <h1 class="title">myGrade</h1>
+      </ion-header-bar>
+      <ion-content class="scroll-content ionic-scroll  has-header"><div class="scroll" style="transform: translate3d(0px, 0px, 0px) scale(1);">
+        <!-- <ion-list>
+          <ion-item ng-controller="nameCtrl">
+            {{name}}
+            <button ng-click="sayHi();">click</button>
+          </ion-item>
+        </ion-list> -->
+
+        <div ng-controller="nameCtrl">
+          <div class="list card">
+            <div class="item item-avatar">
+              <h2 class="icon ion-university"></h2>
+              <h2>
+                <b>GRADE</b>
+              </h2>
+              <p class="ng-binding"></p>
+
+            </div>
+          </div>
+
+          <!-- <input type="button" ng-click="addItem()" value="Add Item"/><br/> -->
+
+          <div class="list list-inset">
+            <label class="item item-input">
+              <input type="text" placeholder="INPUT GRADE" ng-model="num" class="ng-pristine ng-untouched ng-valid">
+            </label>
+          </div>
+
+          <button class="button button-full button-positive" ng-click="addItem()">
+            ENTER
+          </button>
+          <!-- {{list}} -->
+          <!-- ngRepeat: item in list track by $index -->
+        </div>
+      </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px;"></div></div></ion-content>
+    </ion-pane>
+  
+<script>//<![CDATA[
+document.write('<script src="//' + (location.hostname || 'localhost') + ':35729/livereload.js?snipver=1"><\/script>')
+//]]></script><script src="./localhost_files/livereload.js"></script>
+
+
+</body></html>
